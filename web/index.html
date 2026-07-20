@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Shortform Studio</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header><a class="brand" href="/"><b>S</b>Shortform <em>Studio</em></a><span class="local"><i></i> Local session</span></header>
+      <section class="hero"><p class="eyebrow">YouTube → short-form cuts</p><h1>Find the moments<br /><span>worth replaying.</span></h1><p>Paste a YouTube link. Your local clipper ranks strong moments, frames them for vertical, and burns in captions.</p>
+        <form id="job-form" novalidate><label class="sr-only" for="youtube-url">YouTube URL</label><input id="youtube-url" inputmode="url" autocomplete="url" placeholder="Paste a YouTube link…" required /><button type="submit">Make clips <b>↗</b></button></form><p id="form-error" role="alert"></p>
+      </section>
+      <section id="workspace" hidden><div class="heading"><div><p class="eyebrow">Live run</p><h2 id="job-title">Preparing your cut</h2></div><span id="job-status" class="pill">Queued</span></div><div class="progress"><ol id="progress-list"></ol><p id="active-detail">Setting up your job…</p></div><div id="error-panel" class="error" hidden><p class="eyebrow">Processing stopped</p><h3>One stage needs attention.</h3><p id="error-message"></p></div></section>
+      <section id="results" hidden><div class="heading"><div><p class="eyebrow">Ready to review</p><h2>Ranked clips</h2></div><span id="results-summary" class="pill"></span></div><div id="clip-grid"></div></section>
+      <section id="history-section" hidden><div class="heading"><div><p class="eyebrow">This session</p><h2>Recent runs</h2></div></div><div id="history-list"></div></section>
+    </main>
+    <template id="stage-template"><li><span class="dot"></span><div><strong></strong><small></small></div><span class="stage-state"></span></li></template>
+    <script src="/assets/app.js"></script>
+  </body>
+</html>
