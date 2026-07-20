@@ -1,6 +1,6 @@
 # YouTube-to-Shorts Auto-Clipper
 
-Personal, sequential Python prototype that turns a YouTube URL into ranked,
+Sequential Python prototype that turns a YouTube URL into ranked,
 vertical, captioned clips.
 
 ## Setup
